@@ -3,8 +3,10 @@ import { Card, Container, CardDeck, Button, Col, ButtonToolbar } from "react-boo
 import { Context } from "../store/appContext";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+
 export const Planets = props => {
 	const { store, actions } = useContext(Context);
+
 	return (
 		<Container>
 			<h1 className="text-center mt-5">Planets</h1>
@@ -32,6 +34,7 @@ export const Planets = props => {
 										<Link to={`/planet/${i}`}>
 											<Button variant="primary">Learn More</Button>
 										</Link>
+
 										<Link onClick={() => actions.addFavorite(planet.name, "planet")}>
 											<Button variant="outline-warning">
 												<i className="far fa-heart" />

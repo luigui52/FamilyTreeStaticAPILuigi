@@ -55,11 +55,11 @@ export function PlanetDetails(props) {
 									<tbody>
 										<tr>
 											<td>{each.name}</td>
-											<td>{each.Climate}</td>
-											<td>{each.Population}</td>
-											<td>{each.Orbital_Period}</td>
-											<td>{each.Rotation_Period}</td>
-											<td>{each.Diameter}</td>
+											<td>{each.climate}</td>
+											<td>{each.copulation}</td>
+											<td>{each.orbital_Period}</td>
+											<td>{each.rotation_period}</td>
+											<td>{each.diameter}</td>
 										</tr>
 									</tbody>
 								</Table>

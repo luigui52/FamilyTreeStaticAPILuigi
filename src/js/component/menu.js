@@ -4,16 +4,17 @@ import { Context } from "../store/appContext";
 import { Link } from "react-router-dom";
 
 export const Menu = () => {
-	const { store, actions } = useContext(Context); //Se trae de store todas las accione: fetch
+	const { store, actions } = useContext(Context); //Se trae de store todas las acciones de fetch
+
 	return (
 		<Container>
 			<Navbar bg="light">
 				<Link to="/">
 					<Navbar.Brand href="#home">
 						<img
-							src="https://www.vippng.com/png/detail/1-13632_star-wars-logo-png-star-wars-logo-black.png"
-							width="70"
-							height="45"
+							src="https://i.vippng.com/png/small/1-13769_star-wars-logo-star-wars-logo-gold.png"
+							width="120"
+							height="100"
 							className="d-inline-block align-top"
 							alt="React Bootstrap logo"
 						/>

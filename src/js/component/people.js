@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 export const People = props => {
 	const { store, actions } = useContext(Context);
+	const [searchItem, setSearch] = useState();
 
 	return (
 		<Container>
@@ -59,5 +60,5 @@ export const People = props => {
 };
 
 People.propTypes = {
-	data: ropTypes.any
+	data: PropTypes.any
 };

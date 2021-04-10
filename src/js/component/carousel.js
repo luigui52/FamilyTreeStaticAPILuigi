@@ -10,7 +10,7 @@ export const Home = () => {
 					<Link to="/characters">
 						<img
 							className="d-block w-100"
-							src="https://images4.alphacoders.com/673/thumb-1920-673740.jpg"
+							src="https://www.geekgirlauthority.com/wp-content/uploads/2018/05/7773769005_star-wars-1280x640.jpg"
 							alt="Characters"
 						/>
 					</Link>
@@ -23,7 +23,7 @@ export const Home = () => {
 					<Link to="/planetsView">
 						<img
 							className="d-block w-100"
-							src="https://i.pinimg.com/originals/a7/95/96/a79596bdf26a00f6eda7e9e4d10c1e6c.jpg"
+							src="https://static2.cbrimages.com/wordpress/wp-content/uploads/2020/07/star-wars-death-star-earth.jpg"
 							alt="planets"
 						/>
 					</Link>

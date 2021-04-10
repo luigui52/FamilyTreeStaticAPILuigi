@@ -1,9 +1,7 @@
-import { ids } from "webpack";
-
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
-			people: [],
+			peoples: [],
 			planets: [],
 			favorites: []
 		},
@@ -13,14 +11,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const url = "https://swapi.dev/api/people/";
 				const response = await fetch(url);
 				const data = await response.json();
-				setStore({ people: data.results });
+				setStore({ peoples: data.results });
 			},
 
 			loadPlanet: async () => {
 				const url = "https://swapi.dev/api/planets/";
 				const response = await fetch(url);
 				const data = await response.json();
-				setStore({ planet: data.results });
+				setStore({ planets: data.results });
 			},
 			addFavorite: (name, type) => {
 				const store = getStore();
