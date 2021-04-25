@@ -15,7 +15,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 
 			loadPlanet: async () => {
-				const url = "https://swapi.dev/api/planets/";
+				const url = "https://3000-turquoise-rook-t97nmtcw.ws-us03.gitpod.io/planets";
 				const response = await fetch(url);
 				const data = await response.json();
 				setStore({ planets: data.results });
