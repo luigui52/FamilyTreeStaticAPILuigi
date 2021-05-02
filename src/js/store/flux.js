@@ -19,7 +19,21 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const response = await fetch(url);
 				const data = await response.json();
 				setStore({ planets: data.results });
-			},
+            },
+            login: async (data) =>{
+                const url = "https://3000-turquoise-rook-t97nmtcw.ws-us03.gitpod.io/login";
+				const response = await fetch(url, {
+                    method:"POST", body:JSON.stringify({
+                        email:data.email,password:data.password
+                    }),headers:{
+                        "Content-Type":"application/json",
+                        // Authorization:"Bearer "+sessionStorage.getItem("token")
+                    }
+                });
+                const data = await response.json();
+                console.log(data);
+                sessionStorage.setItem("token",data.token)
+            },
 			addFavorite: (name, type) => {
 				const store = getStore();
 				let count = 0;
